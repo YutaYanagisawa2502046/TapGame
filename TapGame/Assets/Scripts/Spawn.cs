@@ -15,7 +15,7 @@ public class Spawn : MonoBehaviour
     [SerializeField] private float accelerationRate = 0.025f; // 1秒ごとに減少する間隔（秒）
 
     
-    private float currentTimer = 0; // スポーン時間計測
+    private float currentTimer = 0f; // スポーン時間計測
     private float baseSpawnInterval;
     private float gameTimer = 0f; // ゲーム開始からの経過時間
 
@@ -41,7 +41,7 @@ public class Spawn : MonoBehaviour
         currentTimer += Time.deltaTime;
         if (currentTimer >= currentInterval) 
         {
-            currentTimer = 0;
+            currentTimer = 0.0f;
             SpawnObjectInCamera();
         }
     }
