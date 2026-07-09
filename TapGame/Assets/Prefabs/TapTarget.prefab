@@ -135,8 +135,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 250
-  maxTimer: 0.8
-  minTimer: 1.9
+  maxTimer: 1.2
+  minTimer: 2.12
 --- !u!114 &2568354783317133914
 MonoBehaviour:
   m_ObjectHideFlags: 0
