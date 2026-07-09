@@ -23,7 +23,9 @@ public class SceneController : MonoBehaviour
         m_fadeController.FadeIn();
     }
 
-    // シーンを変える
+    /// <summary>
+    /// シーン遷移を行うメソッド。フェードアウトを開始し、フェードアウトが完了したら次のシーンに遷移する。
+    /// </summary>
     public void SceneChange()
     {
         m_fadeController.sceneChageFade = true;

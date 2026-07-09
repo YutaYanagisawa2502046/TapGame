@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// ターゲットオブジェクトを制御するクラス
+/// </summary>
 public class Target : MonoBehaviour
 {
     public int score = 100;

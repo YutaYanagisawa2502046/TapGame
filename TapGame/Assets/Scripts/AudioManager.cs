@@ -60,13 +60,14 @@ public class AudioManager : MonoBehaviour
         audioSource.PlayOneShot(clip, 0.6f);
     }
 
-    // 結果音を再生するためのメソッド
+    // 効果音を再生するためのメソッド
     public void PlayResultSound()
     {
         // 523.25Hz, 659.25Hz, 783.99Hz, 1046.50Hzの順に再生するアルペジオを生成して再生
         StartCoroutine(PlayArpeggioRoutine());
     }
 
+    // アルペジオを再生するコルーチン
     private IEnumerator PlayArpeggioRoutine()
     {
         float[] freqs = { 523.25f, 659.25f, 783.99f, 1046.50f }; // C5, E5, G5, C6 (Cメジャーアルペジオ)
@@ -85,7 +86,10 @@ public class AudioManager : MonoBehaviour
         StartCoroutine(PlayGrandFanfareRoutine());
     }
 
-    // 豪華なファンファーレのアルペジオを再生するコルーチン
+    /// <summary>
+    /// 豪華なファンファーレのアルペジオを再生するコルーチン
+    /// </summary>
+    /// <returns>WaitForSeconds</returns>
     private IEnumerator PlayGrandFanfareRoutine()
     {
         // お祝いのファンファーレのアルペジオを生成して再生
@@ -101,9 +105,15 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    // メモリ内でトーンを生成するためのヘルパーメソッド
-    // frequency: 周波数 (Hz), duration: 長さ (秒), attack: 音のピークまでの時間 (秒), decay: 減衰時間 (秒), isThud: ドスン音かどうか
-    // ドスン音の場合は、周波数を徐々に下げることで低い音を表現する
+    /// <summary>
+    /// メモリ内でトーンを生成するためのヘルパーメソッド
+    /// </summary>
+    /// <param name="frequency">周波数 (Hz)</param>
+    /// <param name="duration">長さ (秒)</param>
+    /// <param name="attack">音のピークまでの時間 (秒)</param>
+    /// <param name="decay">減衰時間 (秒)</param>
+    /// <param name="isThud">ドスン音かどうか</param>
+    /// <returns>生成されたAudioClip</returns>
     private AudioClip CreateToneClip(float frequency, float duration, float attack, float decay, bool isThud = false)
     {
         // サンプルレートとサンプル数を計算

@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
+/// <summary>
+/// オブジェクトをスポーンするクラス
+/// </summary>
 public class Spawn : MonoBehaviour
 { 
 
@@ -46,7 +49,9 @@ public class Spawn : MonoBehaviour
         }
     }
 
-    // カメラ内でのスポーンを行う
+    /// <summary>
+    /// カメラの表示範囲内にオブジェクトをスポーンする
+    /// </summary>
     void SpawnObjectInCamera()
     {
         // カメラの表示範囲（ワールド座標）を取得

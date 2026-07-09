@@ -39,6 +39,11 @@ public class CameraShake : MonoBehaviour
     }
 
     // シェイクを開始するための静的メソッド
+    /// <summary>
+    /// カメラシェイクを開始します。
+    /// </summary>
+    /// <param name="duration">シェイクの持続時間（秒）</param>
+    /// <param name="amount">シェイクの振幅 ※大きくすると揺れが激しくなるため注意</param>
     public static void Shake(float duration, float amount)
     {
         // シングルトンインスタンスが存在しない場合、メインカメラにCameraShakeコンポーネントを追加

@@ -39,8 +39,13 @@ public class FadeController : MonoBehaviour
         StartCoroutine(Fade(0, 1, false));
     }
 
-    // 実際のフェード処理 (startAlphaからendAlphaに徐々に変化)
-    // isFadeIn -> フェードインを行うかどうか。判定被りなどの防止の役割
+    /// <summary>
+    /// フェード処理を行うコルーチン
+    /// </summary>
+    /// <param name="startAlpha">開始時のアルファ値</param>
+    /// <param name="endAlpha">終了時のアルファ値</param>
+    /// <param name="isFadeIn">フェードインかどうか</param>
+    /// <returns>IEnumerator</returns>
     private IEnumerator Fade(float startAlpha, float endAlpha, bool isFadeIn)
     {
         float time = 0f; // 経過時間を追跡する変数

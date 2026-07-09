@@ -53,7 +53,11 @@ public class ScoreManager : MonoBehaviour
         AddScore(amount, Vector3.zero);
     }
 
-    // 特定の位置でスコアを追加する拡張メソッド（視覚効果用）
+    /// <summary>
+    /// スコアを追加し、コンボを管理するメソッド
+    /// </summary>
+    /// <param name="baseAmount">追加する基本スコア</param>
+    /// <param name="position">フローティングテキストを表示する位置</param>
     public void AddScore(int baseAmount, Vector3 position)
     {
         // コンボを増加

@@ -1,9 +1,15 @@
 using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// スコアのフローティングテキストやスコア表示のパンチスケール演出を管理するクラス。
+/// </summary>
 public class ScoreJuice : MonoBehaviour
 {
-    // ターゲットのスケールをパンチするための静的メソッド
+    /// <summary>
+    /// ターゲットのGameObjectにScoreJuiceコンポーネントを追加し、パンチスケール演出を開始する静的メソッド。
+    /// </summary>
+    /// <param name="target">パンチスケール演出を適用するターゲットのGameObject</param>
     public static void PunchScale(GameObject target)
     {
         ScoreJuice sj = target.GetComponent<ScoreJuice>();
@@ -36,7 +42,10 @@ public class ScoreJuice : MonoBehaviour
         activeCoroutine = StartCoroutine(PunchRoutine());
     }
 
-    // パンチスケールのコルーチン
+    /// <summary>
+    /// パンチスケール演出を行うコルーチン。スケールを一時的に拡大し、元のスケールに戻す。
+    /// </summary>
+    /// <returns>IEnumerator コルーチン</returns>
     private IEnumerator PunchRoutine()
     {
         // パンチスケールの時間と目標スケールを設定

@@ -2,7 +2,11 @@ using UnityEngine;
 
 public class ParticleBurst : MonoBehaviour
 {
-    // パーティクルバーストを生成する静的メソッド
+    /// <summary>
+    /// パーティクルバーストを生成するメソッド
+    /// </summary>
+    /// <param name="position">パーティクルバーストを生成する位置</param>
+    /// <param name="color">パーティクルの色</param>
     public static void Create(Vector3 position, Color color)
     {
         GameObject burstParent = new GameObject("ParticleBurst");
@@ -10,7 +14,7 @@ public class ParticleBurst : MonoBehaviour
         
         int particleCount = 12;
         Sprite circleSprite = GetDefaultCircleSprite();
-        
+
         for (int i = 0; i < particleCount; i++)
         {
             GameObject p = new GameObject("Particle");
@@ -29,6 +33,10 @@ public class ParticleBurst : MonoBehaviour
         Destroy(burstParent, 1.5f);
     }
 
+    /// <summary>
+    /// particleBurst用のデフォルトの円形スプライトを生成するメソッド
+    /// </summary>
+    /// <returns>生成された円形スプライト</returns>
     private static Sprite GetDefaultCircleSprite()
     {
         // メモリ内で16x16の円形テクスチャを生成
@@ -56,6 +64,9 @@ public class ParticleBurst : MonoBehaviour
     }
 }
 
+/// <summary>
+/// particleBurst内の個々のパーティクルを制御するクラス
+/// </summary>
 public class MovingParticle : MonoBehaviour
 {
     // パーティクルの色を保持するための変数

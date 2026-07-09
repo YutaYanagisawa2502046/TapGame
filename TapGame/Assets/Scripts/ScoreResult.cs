@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
+/// <summary>
+/// スコア集計結果を表示するクラス。ゲーム終了後にスコアをカウントアップ表示し、演出を行う。
+/// </summary>
 public class ScoreResult : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI scoreText;

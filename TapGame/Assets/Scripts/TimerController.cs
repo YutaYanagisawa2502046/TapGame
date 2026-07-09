@@ -4,6 +4,9 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// タイマーの制御を行うクラス。ゲーム中の残り時間を管理し、タイムアップ時の演出を行う。
+/// </summary>
 public class TimerController : MonoBehaviour
 {
     // バーの画像
