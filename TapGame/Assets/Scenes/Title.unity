@@ -489,7 +489,7 @@ GameObject:
   - component: {fileID: 1542354451}
   - component: {fileID: 1542354450}
   m_Layer: 0
-  m_Name: Text (TMP)
+  m_Name: StartText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -909,6 +909,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeImage: {fileID: 568994736}
   fadeDuration: 1
+  changeScene: Game
   sceneChageFade: 0
 --- !u!4 &1986228294
 Transform:
