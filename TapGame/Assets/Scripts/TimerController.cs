@@ -24,7 +24,7 @@ public class TimerController : MonoBehaviour
     // 演出用
     private Color originalBarColor;
 
-    // フェード終了前にタイマーを開始しないためのフラグ
+    // フェード終了前にタイマーやリザルトを開始しないためのフラグ
     public static bool isFadeFinished = false;
 
     // Start is called before the first frame update
