@@ -37,6 +37,12 @@ public class ScoreResult : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!TimerController.isFadeFinished) 
+        {
+            // フェードイン中は演出を止める
+            return;
+        }
+
         if (isFinished)
         {
             // 演出が完了した後、画面タップでタイトルに戻る
