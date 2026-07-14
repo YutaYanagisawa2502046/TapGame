@@ -336,7 +336,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 7f32fc7c45d1fdd4287525ca4a6689e3, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d3bf3bb4aca90a9489b3d56735015dc3, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -640,7 +640,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   effectPrefab: {fileID: 2546549118049464042, guid: 0383ec5585c0e964d89dd18d9a370e3c, type: 3}
-  maxScaleMultiplier: 1.5
+  maxScale: 0.61
   duration: 0.3
 --- !u!4 &1362831962
 Transform:
