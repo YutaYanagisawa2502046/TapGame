@@ -596,7 +596,7 @@ Canvas:
   m_GameObject: {fileID: 1133832900}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -692,7 +692,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0.000061035, y: 0}
+  m_SizeDelta: {x: -90.3757, y: -75.3132}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1542354450
 MonoBehaviour:
@@ -741,7 +741,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 118.27
+  m_fontSize: 89.7
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -827,8 +827,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 599.4668, y: 251.1511}
+  m_AnchoredPosition: {x: 0, y: -0.0000038146973}
+  m_SizeDelta: {x: 299.73, y: 175.58}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1745818365
 MonoBehaviour:
@@ -970,8 +970,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000015259, y: 570}
-  m_SizeDelta: {x: 1080, y: 228.9713}
+  m_AnchoredPosition: {x: 0.000015259, y: 397.01}
+  m_SizeDelta: {x: 1080, y: 112.2359}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1764405362
 MonoBehaviour:
@@ -1020,7 +1020,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 200.01
+  m_fontSize: 100.45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1145,9 +1145,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 8321a531e251a0b4fb1d24f92f04c6f8, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e71e1b9a8edc6e741a4273cf2651f6ac, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.342
+  m_Volume: 0.136
   m_Pitch: 1
   Loop: 1
   Mute: 0
