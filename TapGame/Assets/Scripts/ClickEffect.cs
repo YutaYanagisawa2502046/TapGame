@@ -68,11 +68,6 @@ public class ClickEffect : MonoBehaviour
 
             // 1フレーム進める
             yield return null;
-
         }
-
-        var color = effectPrefab.GetComponent<SpriteRenderer>().color;
-        color.a = 1f;
-        effectPrefab.GetComponent<SpriteRenderer>().color = color;
     }
 }

@@ -16,6 +16,8 @@ public class TimerController : MonoBehaviour
     // タイムアップ表示テキスト
     [SerializeField] TextMeshProUGUI timeUpText;
 
+    [SerializeField] AudioSource timeUpAudio;
+
     // タイマー表示用
     private float currentTime;
     // 時間切れになったか
@@ -67,6 +69,13 @@ public class TimerController : MonoBehaviour
                     float flashVal = Mathf.PingPong(Time.time * flashSpeed, 1f);
                     // Color.Lerpを使って赤色と初期色を補間する
                     timerBarImage.color = Color.Lerp(originalBarColor, Color.red, flashVal);
+                    // 音が流れてるとき再生しない
+                    if (timeUpAudio.isPlaying)
+                    {
+                        return;
+                    }
+                    // タイムアップが近いことを音でも示す
+                    timeUpAudio.Play();
                 }
                 else
                 {
